@@ -64,7 +64,7 @@ requirements to produce a report of the student's scores, only to produce their 
 * Assignment weights and exam weights will always sum to 1.
 
 _Class Diagram_
-![class diagram](https://raw.github.com/mbreslow/coding-sample/master/docs/diagram.png)
+![class diagram](https://raw.github.com/mbreslow/coding-sample/master/grade-tracker/docs/diagram.png)
 
 The _Student_ class is where the arithmetic is coded in the `getWeightedAverage(ScoringPreferences weights)` method.
 
