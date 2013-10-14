@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02245c6b-4fe6-4cf4-b612-85292ee06e8e" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ifs-project.iml" afterPath="$PROJECT_DIR$/gradetracker.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/mbreslow/gradekeeper/GradeTrackerImpl.java" afterPath="$PROJECT_DIR$/src/main/java/net/mbreslow/gradekeeper/GradeTrackerImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/net/mbreslow/gradekeeper/ScoringPreferencesTest.java" afterPath="$PROJECT_DIR$/src/test/java/net/mbreslow/gradekeeper/ScoringPreferencesTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/mbreslow/gradekeeper/Student.java" afterPath="$PROJECT_DIR$/src/main/java/net/mbreslow/gradekeeper/Student.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/mbreslow/gradekeeper/Teacher.java" afterPath="$PROJECT_DIR$/src/main/java/net/mbreslow/gradekeeper/Teacher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/net/mbreslow/gradekeeper/TeacherTest.java" afterPath="$PROJECT_DIR$/src/test/java/net/mbreslow/gradekeeper/TeacherTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/mbreslow/gradekeeper/gradekeeper.uml" afterPath="$PROJECT_DIR$/src/main/java/net/mbreslow/gradekeeper/gradekeeper.uml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ifs-project.iws" />
@@ -16,7 +11,7 @@
     <file path="/fragment.java" changelist="02245c6b-4fe6-4cf4-b612-85292ee06e8e" time="1381711506315" ignored="false" />
     <file path="/Teacher.java" changelist="02245c6b-4fe6-4cf4-b612-85292ee06e8e" time="1381750169469" ignored="false" />
     <file path="/Student.java" changelist="02245c6b-4fe6-4cf4-b612-85292ee06e8e" time="1381749792642" ignored="false" />
-    <file path="/Dummy.txt" changelist="02245c6b-4fe6-4cf4-b612-85292ee06e8e" time="1381718119663" ignored="false" />
+    <file path="/Dummy.txt" changelist="02245c6b-4fe6-4cf4-b612-85292ee06e8e" time="1381751361700" ignored="false" />
     <file path="/GradeTracker.java" changelist="02245c6b-4fe6-4cf4-b612-85292ee06e8e" time="1381711910148" ignored="false" />
     <file path="/GradeTrackerImpl.java" changelist="02245c6b-4fe6-4cf4-b612-85292ee06e8e" time="1381721086548" ignored="false" />
     <file path="/TeacherNotFoundError.java" changelist="02245c6b-4fe6-4cf4-b612-85292ee06e8e" time="1381609911009" ignored="false" />
@@ -28,6 +23,7 @@
     <file path="/WeightedAverageTests.java" changelist="02245c6b-4fe6-4cf4-b612-85292ee06e8e" time="1381722105684" ignored="false" />
     <file path="/GradeTrackerImplTest.java" changelist="02245c6b-4fe6-4cf4-b612-85292ee06e8e" time="1381720931187" ignored="false" />
     <file path="/Utils.java" changelist="02245c6b-4fe6-4cf4-b612-85292ee06e8e" time="1381750387000" ignored="false" />
+    <file path="/README.md" changelist="02245c6b-4fe6-4cf4-b612-85292ee06e8e" time="1381751967611" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,45 +41,8 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint>
-        <option name="NOTIFY_CAUGHT" value="true" />
-        <option name="NOTIFY_UNCAUGHT" value="true" />
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint>
-        <option name="NOTIFY_CAUGHT" value="true" />
-        <option name="NOTIFY_UNCAUGHT" value="true" />
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/test/java/net/mbreslow/gradekeeper/StudentTest.java" line="26" class="net.mbreslow.gradekeeper.WeightedAverageTests" package="net.mbreslow.gradekeeper">
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/test/java/net/mbreslow/gradekeeper/StudentTest.java" line="26" class="net.mbreslow.gradekeeper.StudentTest" package="net.mbreslow.gradekeeper">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -144,6 +103,43 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </line_breakpoints>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -153,16 +149,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GradeTracker.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/mbreslow/gradekeeper/GradeTracker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="10" selection-start="1621" selection-end="1621" vertical-scroll-proportion="-13.363636">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gradekeeper.uml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="gradekeeper.uml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/mbreslow/gradekeeper/gradekeeper.uml">
           <provider selected="true" editor-type-id="UmlEditorProvider">
             <state>
@@ -177,30 +164,20 @@
               </nodes>
               <notes />
               <edges>
-                <edge source="net.mbreslow.gradekeeper.GradeTrackerImpl" target="net.mbreslow.gradekeeper.Teacher">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
                 <edge source="net.mbreslow.gradekeeper.GradeTrackerImpl" target="net.mbreslow.gradekeeper.GradeTracker">
                   <point x="-153.66666666666663" y="-114.5" />
                   <point x="417.07500000000005" y="621.0" />
                   <point x="237.5" y="621.0" />
                   <point x="0.0" y="81.0" />
                 </edge>
-                <edge source="net.mbreslow.gradekeeper.Teacher" target="net.mbreslow.gradekeeper.Student">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="net.mbreslow.gradekeeper.Teacher" target="net.mbreslow.gradekeeper.ScoringPreferences">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
               </edges>
-              <settings layout="Hierarchic Group" zoom="1.0" x="579.0" y="360.5" />
-              <SelectedNodes />
+              <settings layout="Hierarchic Group" zoom="1.0" x="220.0" y="234.0" />
+              <SelectedNodes>
+                <node>net.mbreslow.gradekeeper.Student</node>
+              </SelectedNodes>
               <Categories>
-                <Category>Methods</Category>
                 <Category>Fields</Category>
+                <Category>Methods</Category>
               </Categories>
               <SCOPE>All</SCOPE>
               <VISIBILITY>private</VISIBILITY>
@@ -208,14 +185,23 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="50" selection-start="2023" selection-end="2023" vertical-scroll-proportion="0.3889369">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="GradeTrackerImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/mbreslow/gradekeeper/GradeTrackerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="13" selection-start="185" selection-end="185" vertical-scroll-proportion="-2.4545455">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#404#421#0" expanded="true" />
-              </folding>
+            <state line="9" column="13" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -223,10 +209,8 @@
       <file leaf-file-name="GradeTrackerImplTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/net/mbreslow/gradekeeper/GradeTrackerImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="9" selection-start="1436" selection-end="1437" vertical-scroll-proportion="6.7818184">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="39" column="9" selection-start="1436" selection-end="1437" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -234,10 +218,8 @@
       <file leaf-file-name="TeacherTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/net/mbreslow/gradekeeper/TeacherTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="0" selection-start="2993" selection-end="2993" vertical-scroll-proportion="-10.636364">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="73" column="0" selection-start="2993" selection-end="2993" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -245,10 +227,8 @@
       <file leaf-file-name="StudentTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/net/mbreslow/gradekeeper/StudentTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="9" selection-start="196" selection-end="196" vertical-scroll-proportion="15.272727">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="9" column="9" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -256,10 +236,8 @@
       <file leaf-file-name="ScoringPreferencesTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/net/mbreslow/gradekeeper/ScoringPreferencesTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="58" selection-start="2115" selection-end="2115" vertical-scroll-proportion="-10.672728">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="54" column="58" selection-start="2115" selection-end="2115" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -276,10 +254,8 @@
       <file leaf-file-name="Student.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/mbreslow/gradekeeper/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="0" selection-start="2844" selection-end="2844" vertical-scroll-proportion="-7.6363635">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="94" column="0" selection-start="2844" selection-end="2844" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -287,7 +263,7 @@
       <file leaf-file-name="Teacher.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/mbreslow/gradekeeper/Teacher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="0" selection-start="2563" selection-end="2563" vertical-scroll-proportion="-19.0">
+            <state line="83" column="0" selection-start="2563" selection-end="2563" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -311,7 +287,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/net/mbreslow/gradekeeper/TeacherNotFoundError.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/mbreslow/gradekeeper/NameCollisionError.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -327,6 +302,7 @@
         <option value="$PROJECT_DIR$/src/main/java/net/mbreslow/gradekeeper/Teacher.java" />
         <option value="$PROJECT_DIR$/src/test/java/net/mbreslow/gradekeeper/TeacherTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/net/mbreslow/gradekeeper/ScoringPreferencesTest.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -339,7 +315,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="8" />
-    <option name="y" value="23" />
+    <option name="y" value="22" />
     <option name="width" value="2196" />
     <option name="height" value="1330" />
   </component>
@@ -369,7 +345,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -388,78 +363,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ifs-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ifs-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gradekeeper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ifs-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ifs-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ifs-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ifs-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gradekeeper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -468,21 +374,21 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.lastSelected" value="Markdown" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/reports" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/docs" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -674,19 +580,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -713,6 +606,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -824,13 +730,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="8" y="23" width="2196" height="1330" extended-state="0" />
-    <editor active="false" />
+    <frame x="8" y="22" width="2196" height="1330" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975206" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -840,20 +745,21 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975206" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20790698" sideWeight="0.6702479" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23488373" sideWeight="0.6702479" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32975206" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23488373" sideWeight="0.6702479" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975206" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20790698" sideWeight="0.6702479" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975206" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975206" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -924,9 +830,7 @@
   <component name="editorHistoryManager">
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/runners/ParentRunner.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="25" selection-start="2400" selection-end="2400" vertical-scroll-proportion="0.4161074">
-          <folding />
-        </state>
+        <state line="44" column="25" selection-start="2400" selection-end="2400" vertical-scroll-proportion="0.4161074" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -938,23 +842,17 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="40" selection-start="388" selection-end="388" vertical-scroll-proportion="0.19788918">
-          <folding />
-        </state>
+        <state line="11" column="40" selection-start="388" selection-end="388" vertical-scroll-proportion="0.19788918" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/mbreslow/gradekeeper/NameCollisionError.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="122" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="3" column="122" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/mbreslow/gradekeeper/ObjectNotFoundError.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="23" selection-start="153" selection-end="172" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="5" column="23" selection-start="153" selection-end="172" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/mbreslow/gradekeeper/GradeTracker.java">
@@ -966,19 +864,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/net/mbreslow/gradekeeper/StudentTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="9" selection-start="196" selection-end="196" vertical-scroll-proportion="15.272727">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="9" column="9" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/mbreslow/gradekeeper/Student.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="0" selection-start="2844" selection-end="2844" vertical-scroll-proportion="-7.6363635">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="94" column="0" selection-start="2844" selection-end="2844" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -991,45 +885,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/mbreslow/gradekeeper/Teacher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="0" selection-start="2563" selection-end="2563" vertical-scroll-proportion="-19.0">
+        <state line="83" column="0" selection-start="2563" selection-end="2563" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/net/mbreslow/gradekeeper/TeacherTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="0" selection-start="2993" selection-end="2993" vertical-scroll-proportion="-10.636364">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="73" column="0" selection-start="2993" selection-end="2993" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/net/mbreslow/gradekeeper/ScoringPreferencesTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="58" selection-start="2115" selection-end="2115" vertical-scroll-proportion="-10.672728">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="54" column="58" selection-start="2115" selection-end="2115" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/net/mbreslow/gradekeeper/GradeTrackerImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="9" selection-start="1436" selection-end="1437" vertical-scroll-proportion="6.7818184">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="39" column="9" selection-start="1436" selection-end="1437" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/mbreslow/gradekeeper/GradeTrackerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="185" selection-end="185" vertical-scroll-proportion="-2.4545455">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#404#421#0" expanded="true" />
-          </folding>
+        <state line="9" column="13" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1047,33 +932,33 @@
           </nodes>
           <notes />
           <edges>
-            <edge source="net.mbreslow.gradekeeper.GradeTrackerImpl" target="net.mbreslow.gradekeeper.Teacher">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
             <edge source="net.mbreslow.gradekeeper.GradeTrackerImpl" target="net.mbreslow.gradekeeper.GradeTracker">
               <point x="-153.66666666666663" y="-114.5" />
               <point x="417.07500000000005" y="621.0" />
               <point x="237.5" y="621.0" />
               <point x="0.0" y="81.0" />
             </edge>
-            <edge source="net.mbreslow.gradekeeper.Teacher" target="net.mbreslow.gradekeeper.Student">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="net.mbreslow.gradekeeper.Teacher" target="net.mbreslow.gradekeeper.ScoringPreferences">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="579.0" y="360.5" />
-          <SelectedNodes />
+          <settings layout="Hierarchic Group" zoom="1.0" x="220.0" y="234.0" />
+          <SelectedNodes>
+            <node>net.mbreslow.gradekeeper.Student</node>
+          </SelectedNodes>
           <Categories>
-            <Category>Methods</Category>
             <Category>Fields</Category>
+            <Category>Methods</Category>
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="50" selection-start="2023" selection-end="2023" vertical-scroll-proportion="0.3889369">
+          <folding />
         </state>
       </provider>
     </entry>
