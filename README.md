@@ -67,3 +67,9 @@ _Class Diagram_
 ![class diagram](https://raw.github.com/mbreslow/coding-sample/master/docs/diagram.png)
 
 The _Student_ class is where the arithmetic is coded in the `getWeightedAverage(ScoringPreferences weights)` method.
+
+_Thread Safety_
+
+The API has been made thread-safe by:
+* Synchronizing methods that change data in `Student`
+* Using ConcurrentHashMaps for the maps in `GradeTrackerImpl` and `Teacher`
