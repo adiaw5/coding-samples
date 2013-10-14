@@ -51,3 +51,19 @@ Sally’s cumulative grade after each entry in the grade book:
 
 You can see from this result that the system should always report the grade as a percentage, and should consider the
 fact that if no Exams (in this case) have taken place, the allocations are ignored.
+
+___
+
+To keep things as simple as possible, I create a service interface called GradeTracker that has methods for recording
+scores for students.  I also make the following assumptions:
+
+* No two teachers in the system will have the same name.  I use teacher name as a unique identifier for a Teacher.
+* No two students in the same class will have the same name.  I use student name as a unique identifier within a class.
+* We do not need to retain the individual scores that a student achieves on an exam or an assignment.  There are no
+requirements to produce a report of the student's scores, only to produce their weighted average.
+* Assignment weights and exam weights will always sum to 1.
+
+_Class Diagram_
+![class diagram][docs/diagram.png]
+
+The _Student_ class is where the arithmetic is coded in the `getWeightedAverage(ScoringPreferences weights)` method.
