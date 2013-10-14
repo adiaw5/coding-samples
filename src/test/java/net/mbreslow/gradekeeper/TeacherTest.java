@@ -71,4 +71,5 @@ public class TeacherTest {
             assertEquals(expectedErrorMessage, e.getMessage());
         }
     }
+
 }

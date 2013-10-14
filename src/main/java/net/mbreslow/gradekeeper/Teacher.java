@@ -83,28 +83,6 @@ public class Teacher {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        Teacher teacher = (Teacher) o;
-
-        if (!name.equals(teacher.name)) return false;
-        if (!scoringPreferences.equals(teacher.scoringPreferences)) return false;
-        if (!studentsByName.equals(teacher.studentsByName)) return false;
-
-        return true;
-    }
-
-    @Override
-    public int hashCode() {
-        int result = name.hashCode();
-        result = 31 * result + scoringPreferences.hashCode();
-        result = 31 * result + studentsByName.hashCode();
-        return result;
-    }
-
-    @Override
     public String toString() {
         return "Teacher{" +
                 "name='" + name + '\'' +

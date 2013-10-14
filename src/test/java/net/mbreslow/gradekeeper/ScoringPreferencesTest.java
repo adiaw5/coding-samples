@@ -1,6 +1,9 @@
 package net.mbreslow.gradekeeper;
 
 import org.junit.Test;
+
+import static junit.framework.Assert.assertEquals;
+import static junit.framework.Assert.assertFalse;
 import static org.junit.Assert.*;
 
 /**
@@ -33,5 +36,26 @@ public class ScoringPreferencesTest {
             final String expected = "weightAssignments (" + weightAssignments + ") + weightExams (" + weightExams + ") must sum to 1.  " + (weightAssignments + weightExams) + " != 1";
             assertEquals(expected, e.getMessage());
         }
+    }
+
+
+    @Test
+    public void testEquality() throws Exception {
+        ScoringPreferences preferences1 = new ScoringPreferences(0.5, 0.5, 5);
+        ScoringPreferences preferences2 = new ScoringPreferences(0.5, 0.5, 5);
+
+        assertEquals(preferences1, preferences2);
+        assertEquals(preferences2.hashCode(), preferences2.hashCode());
+
+        preferences2 = new ScoringPreferences(0.4, 0.6, 5);
+        assertFalse(preferences1.equals(preferences2));
+        assertFalse(preferences1.hashCode() == preferences2.hashCode());
+
+
+        preferences2 = new ScoringPreferences(0.5, 0.5, 50);
+        assertFalse(preferences1.equals(preferences2));
+        assertFalse(preferences1.hashCode() == preferences2.hashCode());
+
+
     }
 }

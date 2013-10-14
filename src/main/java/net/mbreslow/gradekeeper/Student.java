@@ -7,7 +7,7 @@ import java.util.List;
  * Keeps a sum Student's test and exam scores as well as the number of extra credit assignments completed and the
  * number of exams/assignments completed.
  * Uses the data in the {@link Student#getWeightedAverage(ScoringPreferences)} method to produce the weighted average.
- *
+ * <br/>
  * NOTE: In this version of the code, we do not retain the individual scores as the requirements specify that we should
  * be able to accomodate an unlimited number of assignments and exams and does not require an API for producing a report
  * of the actual records.
@@ -91,38 +91,6 @@ public class Student {
      */
     public String getName() {
         return name;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        Student student = (Student) o;
-
-        if (assignmentsCount != student.assignmentsCount) return false;
-        if (Double.compare(student.assignmentsSum, assignmentsSum) != 0) return false;
-        if (examsCount != student.examsCount) return false;
-        if (Double.compare(student.examsSum, examsSum) != 0) return false;
-        if (extraCredits != student.extraCredits) return false;
-        if (name != null ? !name.equals(student.name) : student.name != null) return false;
-
-        return true;
-    }
-
-    @Override
-    public int hashCode() {
-        int result;
-        long temp;
-        result = extraCredits;
-        result = 31 * result + (name != null ? name.hashCode() : 0);
-        result = 31 * result + examsCount;
-        temp = Double.doubleToLongBits(examsSum);
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
-        result = 31 * result + assignmentsCount;
-        temp = Double.doubleToLongBits(assignmentsSum);
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
-        return result;
     }
 
     @Override

@@ -124,21 +124,4 @@ public class GradeTrackerImpl implements GradeTracker {
                 "teachersByName=" + teachersByName +
                 '}';
     }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof GradeTrackerImpl)) return false;
-
-        GradeTrackerImpl that = (GradeTrackerImpl) o;
-
-        if (!teachersByName.equals(that.teachersByName)) return false;
-
-        return true;
-    }
-
-    @Override
-    public int hashCode() {
-        return teachersByName.hashCode();
-    }
 }
