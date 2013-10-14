@@ -4,9 +4,9 @@ Implement a solution to the following problem using the latest major released ve
 include unit tests using the open source JUnit framework. The program should be an object-oriented API and should not
 include a user interface of any kind. There is no need to provide any form of data persistence.
 
-We are looking for clean, well-factored, object-oriented code that has accompanying JUnit tests. Your design should be
+**_We are looking for clean, well-factored, object-oriented code that has accompanying JUnit tests. Your design should be
 “as simple as possible but not simpler” and appropriate to the level of the problem at hand. In other words, doing
-everything in a main method is far too little (and not object-oriented), and using EJB is far, far too much.
+everything in a main method is far too little (and not object-oriented), and using EJB is far, far too much._**
 
 Here are the requirements:
 
