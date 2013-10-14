@@ -7,16 +7,12 @@ import java.util.Collection;
 import static junit.framework.TestCase.*;
 
 /**
- * Created with IntelliJ IDEA.
- * User: marc2112
- * Date: 10/13/13
- * Time: 7:50 AM
- * To change this template use File | Settings | File Templates.
+ * Unit tests for the Teacher class
  */
 public class TeacherTest {
     @Test
     public void testBasics() throws Exception {
-        ScoringPreferences preferences = new ScoringPreferences(.8f, .2f, 1);
+        ScoringPreferences preferences = new ScoringPreferences(.8, .2, 1);
         final String teacherName = "Ms. Beth";
         Teacher teacher = new Teacher(teacherName, preferences);
         final String studentName = "jake";
@@ -27,14 +23,14 @@ public class TeacherTest {
         assertNull(teacher.getStudent("jack"));
         assertEquals(teacherName, teacher.getName());
         assertSame(preferences, teacher.getScoringPreferences());
-        ScoringPreferences preferences2 = new ScoringPreferences(.8f, .2f,1);
+        ScoringPreferences preferences2 = new ScoringPreferences(.8, .2,1);
         teacher.setScoringPreferences(preferences2);
         assertSame(preferences2, teacher.getScoringPreferences());
     }
 
     @Test
     public void testGetStudents() throws Exception {
-        ScoringPreferences preferences = new ScoringPreferences(.8f, .2f, 1);
+        ScoringPreferences preferences = new ScoringPreferences(.8, .2, 1);
         final String teacherName = "teacher";
         Teacher t = new Teacher(teacherName, preferences);
         final int numStudents = 10;
@@ -60,8 +56,8 @@ public class TeacherTest {
     }
 
     @Test
-    public void testNameCollision() throws Exception {
-        ScoringPreferences preferences = new ScoringPreferences(.8f, .2f, 1);
+    public void testStudentNameCollision() throws Exception {
+        ScoringPreferences preferences = new ScoringPreferences(.8, .2, 1);
         final String teacherName = "teacher";
         Teacher t = new Teacher(teacherName, preferences);
         final String studentName = "student";

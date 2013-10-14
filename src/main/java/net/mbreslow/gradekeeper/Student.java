@@ -4,22 +4,29 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Keep track of student test and assignment scores.  Capable of producing a weighted average score for the student.
+ * Keeps a sum Student's test and exam scores as well as the number of extra credit assignments completed and the
+ * number of exams/assignments completed.
+ * Uses the data in the {@link Student#getWeightedAverage(ScoringPreferences)} method to produce the weighted average.
+ *
+ * NOTE: In this version of the code, we do not retain the individual scores as the requirements specify that we should
+ * be able to accomodate an unlimited number of assignments and exams and does not require an API for producing a report
+ * of the actual records.
  */
 public class Student {
     private int extraCredits = 0;
     private String name;
 
     private int   examsCount = 0;
-    private float examsSum = 0;
+    private double examsSum = 0;
     private int   assignmentsCount = 0;
-    private float assignmentsSum = 0;
+    private double assignmentsSum = 0;
 
     /**
      * Create a new Student with the given Name
      * @param name unique name of th student
      */
     public Student(String name) {
+        assert name != null;
         this.name = name;
     }
 
@@ -27,7 +34,7 @@ public class Student {
      * Record the score for a new assignment
      * @param score score (percentage)
      */
-    public synchronized void addAssignment(float score) {
+    public synchronized void addAssignment(double score) {
         assignmentsCount++;
         assignmentsSum += score;
     }
@@ -36,7 +43,7 @@ public class Student {
      * Record the score for a new exam
      * @param score score (percentage)
      */
-    public synchronized void addExam(float score) {
+    public synchronized void addExam(double score) {
         examsCount++;
         examsSum += score;
     }
@@ -53,17 +60,17 @@ public class Student {
      * @param weights the scoring preferences for a teacher
      * @return weighted average as a percent
      */
-    public synchronized float getWeightedAverage(ScoringPreferences weights) {
-        float examAverage = 0;
+    public synchronized double getWeightedAverage(ScoringPreferences weights) {
+        double examAverage = 0;
         if (examsCount != 0) {
             examAverage = examsSum/examsCount;
         }
-        float assignmentAverage = 0;
-        if (assignmentsCount > 0) {
+        double assignmentAverage = 0;
+        if (assignmentsCount != 0) {
             assignmentAverage = assignmentsSum/assignmentsCount;
             assignmentAverage += extraCredits * weights.getExtraCreditBonus();
         }
-        float result = 0;
+        double result = 0;
         if (examsCount != 0 && assignmentsCount != 0) {
             // apply allocations
             result = (examAverage * weights.getWeightExams()) + (assignmentAverage * weights.getWeightAssignments());
@@ -84,5 +91,49 @@ public class Student {
      */
     public String getName() {
         return name;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Student student = (Student) o;
+
+        if (assignmentsCount != student.assignmentsCount) return false;
+        if (Double.compare(student.assignmentsSum, assignmentsSum) != 0) return false;
+        if (examsCount != student.examsCount) return false;
+        if (Double.compare(student.examsSum, examsSum) != 0) return false;
+        if (extraCredits != student.extraCredits) return false;
+        if (name != null ? !name.equals(student.name) : student.name != null) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result;
+        long temp;
+        result = extraCredits;
+        result = 31 * result + (name != null ? name.hashCode() : 0);
+        result = 31 * result + examsCount;
+        temp = Double.doubleToLongBits(examsSum);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        result = 31 * result + assignmentsCount;
+        temp = Double.doubleToLongBits(assignmentsSum);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "extraCredits=" + extraCredits +
+                ", name='" + name + '\'' +
+                ", examsCount=" + examsCount +
+                ", examsSum=" + examsSum +
+                ", assignmentsCount=" + assignmentsCount +
+                ", assignmentsSum=" + assignmentsSum +
+                '}';
     }
 }

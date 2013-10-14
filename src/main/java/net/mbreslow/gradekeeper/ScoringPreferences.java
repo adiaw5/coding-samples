@@ -1,12 +1,12 @@
 package net.mbreslow.gradekeeper;
 
 /**
- * Immutable class holds a teacher's scoring preferences
+ * Immutable class holds a teacher's scoring preferences (weights)
  */
 public class ScoringPreferences {
-    private float weightAssignments = 1;
-    private float weightExams = 1;
-    private float extraCreditBonus = .02f;
+    private double weightAssignments = 1;
+    private double weightExams = 1;
+    private double extraCreditBonus = .02f;
 
     /**
      * Constructor.
@@ -15,7 +15,7 @@ public class ScoringPreferences {
      * @param extraCreditBonus
      * @throws IllegalArgumentException when weightAssignments + weightExams does not sum to 1
      */
-    public ScoringPreferences(float weightAssignments, float weightExams, float extraCreditBonus) {
+    public ScoringPreferences(double weightAssignments, double weightExams, double extraCreditBonus) {
         this.weightAssignments = weightAssignments;
         this.weightExams = weightExams;
         this.extraCreditBonus = extraCreditBonus;
@@ -24,15 +24,51 @@ public class ScoringPreferences {
         }
     }
 
-    public float getWeightAssignments() {
+    public double getWeightAssignments() {
         return weightAssignments;
     }
 
-    public float getWeightExams() {
+    public double getWeightExams() {
         return weightExams;
     }
 
-    public float getExtraCreditBonus() {
+    public double getExtraCreditBonus() {
         return extraCreditBonus;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        ScoringPreferences that = (ScoringPreferences) o;
+
+        if (Double.compare(that.extraCreditBonus, extraCreditBonus) != 0) return false;
+        if (Double.compare(that.weightAssignments, weightAssignments) != 0) return false;
+        if (Double.compare(that.weightExams, weightExams) != 0) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result;
+        long temp;
+        temp = Double.doubleToLongBits(weightAssignments);
+        result = (int) (temp ^ (temp >>> 32));
+        temp = Double.doubleToLongBits(weightExams);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        temp = Double.doubleToLongBits(extraCreditBonus);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "ScoringPreferences{" +
+                "weightAssignments=" + weightAssignments +
+                ", weightExams=" + weightExams +
+                ", extraCreditBonus=" + extraCreditBonus +
+                '}';
     }
 }

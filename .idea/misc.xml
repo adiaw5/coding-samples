@@ -3,6 +3,10 @@
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
   </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OPEN_IN_BROWSER" value="true" />
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/reports" />
+  </component>
   <component name="IdProvider" IDEtalkID="10A9EEFFDC7C1F7244A29B336EB18BF2" />
   <component name="MavenProjectsManager">
     <option name="originalFiles">

@@ -18,6 +18,7 @@ public class Teacher {
      * @param scoringPreferences Teacher's scoring preferences
      */
     public Teacher(String teacherName, ScoringPreferences scoringPreferences) {
+        assert teacherName != null;
         assert scoringPreferences != null;
         this.name = teacherName;
         this.scoringPreferences = scoringPreferences;
@@ -79,5 +80,36 @@ public class Teacher {
      */
     public String getName() {
         return name;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Teacher teacher = (Teacher) o;
+
+        if (!name.equals(teacher.name)) return false;
+        if (!scoringPreferences.equals(teacher.scoringPreferences)) return false;
+        if (!studentsByName.equals(teacher.studentsByName)) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = name.hashCode();
+        result = 31 * result + scoringPreferences.hashCode();
+        result = 31 * result + studentsByName.hashCode();
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Teacher{" +
+                "name='" + name + '\'' +
+                ", scoringPreferences=" + scoringPreferences +
+                ", studentsByName=" + studentsByName +
+                '}';
     }
 }

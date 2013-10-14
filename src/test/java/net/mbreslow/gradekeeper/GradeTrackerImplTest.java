@@ -3,14 +3,12 @@ package net.mbreslow.gradekeeper;
 import org.junit.Before;
 import org.junit.Test;
 
+import static junit.framework.Assert.assertEquals;
+import static junit.framework.Assert.fail;
 import static org.junit.Assert.*;
 
 /**
- * Created with IntelliJ IDEA.
- * User: marc2112
- * Date: 10/13/13
- * Time: 8:45 PM
- * To change this template use File | Settings | File Templates.
+ * Unit tests for the {@link GradeTracker} service
  */
 public class GradeTrackerImplTest {
     /**
@@ -21,7 +19,7 @@ public class GradeTrackerImplTest {
 
     @Test
     public void testAddUpdateTeacher() throws Exception {
-        ScoringPreferences preferences = new ScoringPreferences(.8f,.2f,3);
+        ScoringPreferences preferences = new ScoringPreferences(.8,.2,3);
         final String teacherName = "teacher1";
         service.addTeacher(teacherName, preferences);
         try {
@@ -34,17 +32,17 @@ public class GradeTrackerImplTest {
 
     @Test
     public void testRecordAssignmentScore() throws Exception {
-        ScoringPreferences preferences1 = new ScoringPreferences(0.2f, 0.8f, 2f);
-        ScoringPreferences preferences2 = new ScoringPreferences(0.4f, 0.6f, 2f);
+        ScoringPreferences preferences1 = new ScoringPreferences(0.2, 0.8, 2);
+        ScoringPreferences preferences2 = new ScoringPreferences(0.4, 0.6, 2);
         String teacherName = "teacher";
         String studentName = "student";
         service.addTeacher(teacherName, preferences1);
-        final float examScore = 60;
+        final double examScore = 60;
         service.recordExamScore(teacherName, studentName, examScore);
-        final float assignmentScore = 80;
+        final double assignmentScore = 80;
         service.recordAssignmentScore(teacherName, studentName, assignmentScore);
-        float avg = service.getStudentAverage(teacherName, studentName);
-        float expectedAvg = examScore * preferences1.getWeightExams() + assignmentScore * preferences1.getWeightAssignments();
+        double avg = service.getStudentAverage(teacherName, studentName);
+        double expectedAvg = examScore * preferences1.getWeightExams() + assignmentScore * preferences1.getWeightAssignments();
         assertEquals(expectedAvg, avg, 0);
         service.updateTeacher(teacherName, preferences2);
         avg = service.getStudentAverage(teacherName, studentName);
@@ -54,16 +52,16 @@ public class GradeTrackerImplTest {
 
     @Test
     public void testRecordExtraCredit() throws Exception {
-        ScoringPreferences preferences1 = new ScoringPreferences(0.2f, 0.8f, 2f);
+        ScoringPreferences preferences1 = new ScoringPreferences(0.2, 0.8, 2);
         String teacherName = "teacher";
         String studentName = "student2";
         service.addTeacher(teacherName, preferences1);
-        final float examScore = 60;
+        final double examScore = 60;
         service.recordExamScore(teacherName, studentName, examScore);
-        final float assignmentScore = 80;
+        final double assignmentScore = 80;
         service.recordAssignmentScore(teacherName, studentName, assignmentScore);
-        float avg = service.getStudentAverage(teacherName, studentName);
-        float expectedAvg = examScore * preferences1.getWeightExams() + assignmentScore * preferences1.getWeightAssignments();
+        double avg = service.getStudentAverage(teacherName, studentName);
+        double expectedAvg = examScore * preferences1.getWeightExams() + assignmentScore * preferences1.getWeightAssignments();
         assertEquals(expectedAvg, avg, 0);
         service.recordExtraCredit(teacherName, studentName);
         avg = service.getStudentAverage(teacherName, studentName);
@@ -82,6 +80,25 @@ public class GradeTrackerImplTest {
         catch (ObjectNotFoundError e) {
             final String expected = "No teacher with the name " + missingTeacherName + " exists";
             assertEquals(expected, e.getMessage());
+        }
+    }
+
+
+
+    @Test
+    public void testTeacherNameCollision() throws Exception {
+        ScoringPreferences preferences = new ScoringPreferences(.8, .2, 1);
+        final String teacherName = "teacher collides";
+        service.addTeacher(teacherName, preferences);
+
+
+        try {
+            service.addTeacher(teacherName, preferences);
+            fail("Expected a NameCollisionError but none was thrown");
+        }
+        catch (NameCollisionError e) {
+            final String expectedErrorMessage = "Unable to add a teacher named " + teacherName + " because one already exists.  Use unique names.";
+            assertEquals(expectedErrorMessage, e.getMessage());
         }
     }
 }

@@ -4,19 +4,15 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Created with IntelliJ IDEA.
- * User: marc2112
- * Date: 10/12/13
- * Time: 5:16 PM
- * To change this template use File | Settings | File Templates.
+ * Unit tests for the ScoringPreferences class
  */
 public class ScoringPreferencesTest {
     @Test
     public void testScoringPreferences() throws Exception {
 
-        float weightAssignments = .8f;
-        float weightExams = .2f;
-        float extraCreditBonus = 30;
+        double weightAssignments = .8;
+        double weightExams = .2;
+        double extraCreditBonus = 30;
 
         ScoringPreferences prefs = new ScoringPreferences(weightAssignments, weightExams, extraCreditBonus);
         assertEquals("weightAssignments", weightAssignments, prefs.getWeightAssignments(), 0);
@@ -26,9 +22,9 @@ public class ScoringPreferencesTest {
 
     @Test
     public void testIllegalWeights() throws Exception {
-        float weightAssignments = .9f;
-        float weightExams = .2f;
-        float extraCreditBonus = 30;
+        double weightAssignments = .9;
+        double weightExams = .2;
+        double extraCreditBonus = 30;
 
         try {
             ScoringPreferences prefs = new ScoringPreferences(weightAssignments, weightExams, extraCreditBonus);

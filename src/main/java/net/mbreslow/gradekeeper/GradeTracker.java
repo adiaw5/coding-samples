@@ -10,7 +10,7 @@ public interface GradeTracker {
      * @param studentName unique name of the student
      * @param score score for the assignment
      */
-    void recordAssignmentScore(String teacherName, String studentName, float score);
+    void recordAssignmentScore(String teacherName, String studentName, double score);
 
     /**
      * Record the score for an exam
@@ -18,7 +18,7 @@ public interface GradeTracker {
      * @param studentName unique name of the student
      * @param score score for the assignment
      */
-    void recordExamScore(String teacherName, String studentName, float score);
+    void recordExamScore(String teacherName, String studentName, double score);
 
 
     /**
@@ -47,6 +47,6 @@ public interface GradeTracker {
      * @param teacherName name of the teacher of the student's class
      * @param studentName name of the student
      */
-    float getStudentAverage(String teacherName, String studentName);
+    double getStudentAverage(String teacherName, String studentName);
 }
 
